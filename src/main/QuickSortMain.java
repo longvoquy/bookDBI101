@@ -19,7 +19,7 @@ public class QuickSortMain {
 
             // Sắp xếp danh sách theo tên tác giả
             //quickSort
-            QuickSorter1.sort(booksList, new Comparators.AuthorComparator());
+            QuickSorter.sort(booksList, new Comparators.AuthorComparator());
 
             // In ra 5 tên sách đã sắp xếp
             System.out.println("5 tên sách đã được sắp xếp theo tên tác giả:");
