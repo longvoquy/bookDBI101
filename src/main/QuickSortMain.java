@@ -1,13 +1,16 @@
-
-
+package main;
+import algorithm.Comparators;
+import algorithm.*;
+import data.Books;
+import data.ReadCSV;
 
 import java.io.IOException;
-
 import java.util.List;
 
-public class Main1 {
+public class QuickSortMain {
     public static void main(String[] args) {
-        String filePath = "C:\\Users\\MSII\\Desktop\\CSD201_FA23\\BooksTest\\src\\books3.csv"; // Đặt đường dẫn đến tệp CSV của bạn ở đây
+        String filePath = "E:\\ki_3\\CSD101\\Book\\src\\bookdata\\books3.csv"; // Đặt đường dẫn đến tệp CSV của bạn ở đây
+
 
         // Sử dụng ReadCSV để đọc dữ liệu từ tệp CSV
         ReadCSV csvReader = new ReadCSV(filePath);
@@ -15,6 +18,7 @@ public class Main1 {
             List<Books> booksList = csvReader.readFile();
 
             // Sắp xếp danh sách theo tên tác giả
+            //quickSort
             QuickSorter1.sort(booksList, new Comparators.AuthorComparator());
 
             // In ra 5 tên sách đã sắp xếp

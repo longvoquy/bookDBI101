@@ -1,5 +1,5 @@
-
-
+package algorithm;
+import data.*;
 import java.util.Comparator;
 
 
